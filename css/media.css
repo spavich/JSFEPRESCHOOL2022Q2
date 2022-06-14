@@ -1,0 +1,121 @@
+@media (max-width: 1060px){
+	.contacts__link {
+    display: block;
+	}
+}
+@media (max-width: 960px){
+	body{
+		padding: 0;
+	}
+	.header{
+		display: none;
+	}
+	.main {
+    display: block;
+		margin-top: 0;
+	}
+	.main__left{
+		border-radius: 10px 10px 0 0;
+	}
+	.user{
+		margin-bottom: 35px;
+	}
+	.contacts__link {
+    display: inline;
+	}
+	.section--margin-bottom:last-child{
+		margin-bottom: 0;
+	}
+	.main__right{
+		border-radius: 0 0 10px 10px;
+	}
+}
+@media (max-width: 690px){
+	body{
+		font-size: 16px;
+	}
+	.h2{
+		font-size: 20px;
+	}
+	.main__left{
+		border-radius: 10px 10px 0 0;
+	}
+	.main__right{
+		border-radius: 0 0 10px 10px;
+	}
+}
+@media (max-width: 690px){
+	.h2 {
+    font-size: 18px;
+	}
+	.h2-wrapper__image {
+		display: none;
+	}
+	.h2-wrapper__line {
+    width: 100%;
+	}
+	.h2-wrapper::after {
+		display: none;
+	}
+	.main{
+		padding: 10px;
+	}
+	.main__left, .main__right {
+    padding: 15px;
+	}
+	.avatar{
+		width: 225px;
+		height: 225px;
+	}
+	.user {
+    margin-bottom: 25px;
+	}
+}
+@media (max-width: 400px){
+	body{
+		font-size: 14px;
+	}
+	.h2 {
+    font-size: 16px;
+	}
+	.avatar {
+    width: 200px;
+    height: 200px;
+	}
+	.section--margin-bottom,
+	.user {
+    margin-bottom: 20px;
+	}
+	.hobbies__list{
+		display: block;
+		margin-left: 10%;
+	}
+	footer{
+		flex-direction: column;
+	}
+	.footer__github-link{
+		order: 1;
+		margin-bottom: 15px;
+	}
+	.footer__copy{
+		order: 3;
+	}
+	.footer__rsschool{
+		order: 2;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 320px){
+	body{
+		font-size: 12px;
+	}
+	.h2 {
+    font-size: 14px;
+	}
+	.main__left, .main__right {
+    padding: 10px;
+	}
+	.code-javascript {
+    padding: 10px;
+	}
+}
