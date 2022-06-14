@@ -191,9 +191,6 @@ a{
 	padding-left: 60px;
 	position: relative;
 }
-.main__right a{
-	color: inherit;
-}
 .h2-wrapper{
 	display: flex;
 	align-items: center;
@@ -271,6 +268,9 @@ a{
 	font-family: 'Roboto-Bold';
 	font-weight: 700;
 	font-style: italic;
+}
+.project-list__link{
+	color: #000;
 }
 .code-javascript{
 	font-weight: bold;
