@@ -191,6 +191,9 @@ a{
 	padding-left: 60px;
 	position: relative;
 }
+.main__right a{
+	color: inherit;
+}
 .h2-wrapper{
 	display: flex;
 	align-items: center;
