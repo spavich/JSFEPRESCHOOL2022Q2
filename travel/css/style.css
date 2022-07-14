@@ -160,33 +160,33 @@ hr{
 	font-style: italic;
 	font-weight: 700;
 }
-.question{
+.question {
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 16px 16px 16px 35px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 16px;
 	width: 100%;
-	position: relative;
-	margin-top: 2.875rem;
+	margin-top: 46px;
 }
-.question__input{
+.question__input {
+	width: 70%;
 	color: #0D606F;
 	font-weight: bold;
-	width: 100%;
-	height: 5.9375rem;
-	background: rgba(255, 255, 255, 0.7);
+	padding: 0 0.5rem;
+	background: none;
 	border-radius: 16px;
 	border: none;
-	padding: 1.125rem 16.875rem 1.125rem 2.5625rem;
 }
 .question__input::placeholder{
 	font-style: italic;
 	font-size: 1.5rem;
 	line-height: 1.20833;
 	color: #F2785C;
+	border: none;
 }
-.question__button{
-	padding: 0.5625em 1.354166em;
-	position: absolute;
-  top: 50%;
-  right: 1.125rem;
-	transform: translateY(-50%);
+.question__button {
+	padding: 0.5em 1.3em;
 }
 /* Steps section*/
 .steps{
@@ -252,8 +252,6 @@ hr{
 	margin-left: -543px;
 	margin-bottom: 24px;
 }
-
-/*  */
 .slider__item{
 	flex: 0 0 800px;
 	margin: 0 30px;
@@ -272,7 +270,6 @@ hr{
 .slider__item-img{
 	border-radius: 16px;
 }
-/*  */
 .slider__dots{
 	display: flex;
 	justify-content: center;
@@ -289,7 +286,6 @@ hr{
 .slider__dot--active{
 	background-color: #F2785C;
 }
-/*  */
 .button-arrow{
 	width: 9.5em;
 	height: 2.4583333em;
@@ -297,8 +293,8 @@ hr{
 }
 .button-arrow::before{
 	content: url(../img/icon/arrow-right.svg);
-	width: 1.666666em;
-	height: 1.666666em;
+	width: 1.5em;
+	height: 1.5em;
 	margin-right: 0.41666em;
 }
 /* Section Stories */
@@ -314,24 +310,9 @@ hr{
 	padding: 35px 0 40px;
 	background: rgba(255, 255, 255, 0.7);
 }
-.stories__img-thailand{
-	background-image: url(../img/stories/thailand.jpg);
-}
-.stories__img-canyonlands{
-	background-image: url(../img/stories/canyonlands.jpg);
-}
-.stories__img-mountains{
-	background-image: url(../img/stories/mountains.jpg);
-}
-.stories__img-longest{
-	background-image: url(../img/stories/longest_journey.jpg);
-}
 .stories__img{
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 25rem;
-	height: 15.625rem;
+	max-width: 400px;
+	max-height: 250px;
 	filter: drop-shadow(0px 4px 4px #0D606F);
 	border-radius: 16px;
 	transition: transform .5s ease;
@@ -357,11 +338,22 @@ hr{
 	line-height: 1.2;
 	margin-bottom: 0.571428em;
 }
+.stories__info-text{
+	display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+}
 .stories__info-more{
+	display: inline-block;
 	font-weight: 700;
 	text-transform: capitalize;
 	text-decoration-line: underline;
 	color: #0D606F;
+	margin-top: 4px;
 }
 .stories__button{
 	display: flex;

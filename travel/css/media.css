@@ -16,15 +16,12 @@
 		font-size: calc(3rem + (5 - 3) * ((100vw - 36.875rem) / (76.875 - 36.875)));
 	}
 	.question{
-		margin-top: calc(1.4rem + (2.875 - 1.4) * ((100vw - 24.375rem) / (76.875 - 24.375)));
-	}
-	.question__input{
-		height: calc(2.5rem + (5.9375 - 2.5) * ((100vw - 24.375rem) / (76.875 - 24.375)));
-		padding-right: calc(9.375rem + (16.875 - 9.375) * ((100vw - 24.375rem) / (76.875 - 24.375)));
-		padding-left: calc(0.8125rem + (2.5625 - 0.8125) * ((100vw - 24.375rem) / (76.875 - 24.375)));
+		margin-top: calc(22px + (46 - 22) * ((100vw - 390px) / (1230 - 390)));
+		padding: calc(7px + (16 - 7) * ((100vw - 320px) / (1230 - 320)));
+		padding-left: calc(5px + (35 - 5) * ((100vw - 320px) / (1230 - 320)));
 	}
 	.question__input::placeholder{
-		font-size: calc(0.5625rem + (1.5 - 0.5625) * ((100vw - 24.375rem) / (76.875 - 24.375)));
+		font-size: calc(0.7rem + (1.5 - 0.7) * ((100vw - 20rem) / (76.875 - 20)));
 	}
 	.steps{
 		padding-top: calc(1.25rem + (5 - 1.25) * ((100vw - 24.375rem) / (76.875 - 24.375)));
@@ -39,10 +36,6 @@
 	.stories__bg-wrapper{
 		padding-top: calc(0.625rem + (2.1875 - 0.625) * ((100vw - 390px) / (1230 - 390)));
 		padding-bottom: calc(0.75rem + (2.5 - 0.75) * ((100vw - 390px) / (1230 - 390)));
-	}
-	.stories__img{
-		width: calc(9.6875rem + (25 - 9.6875) * ((100vw - 24.375rem) / (76.875 - 24.375)));
-		height: calc(8.125rem + (15.625 - 8.125) * ((100vw - 24.375rem) / (76.875 - 24.375)));
 	}
 	.stories__info-title{
 		font-size: calc(0.6875rem + (2.1875 - 0.6875) * ((100vw - 24.375rem) / (76.875 - 24.375)));
@@ -142,6 +135,10 @@
 		font-size: calc(1.25rem + (1.7 - 0.875) * ((100vw - 24.375rem) / (62.5 - 24.375)));
 		bottom: 1em;
 	}
+	.stories__img{
+		max-width: 300px;
+    max-height: 200px;
+	}
 }
 
 @media (max-width: 700px){
@@ -169,6 +166,9 @@
     width: 15px;
     height: 15px;
 	}
+	.stories__img{
+		max-width: 250px;
+	}
 }
 
 @media (max-width: 590px){
@@ -194,17 +194,8 @@
 	.stories__bg{
 		background-image: url(../img/bg/bg2_mobile.jpg);
 	}
-		.stories__img-thailand{
-		background-image: url(../img/stories/thailand_mobile.jpg);
-	}
-	.stories__img-canyonlands{
-		background-image: url(../img/stories/canyonlands_mobile.jpg);
-	}
-	.stories__img-mountains{
-		background-image: url(../img/stories/mountains_mobile.jpg);
-	}
-	.stories__img-longest{
-		background-image: url(../img/stories/longest_journey_mobile.jpg);
+	.stories__img {
+    max-width: 190px;
 	}
 }
 
@@ -261,5 +252,12 @@
 	.slider__dot {
     width: 10px;
     height: 10px;
+	}
+	.question__button {
+		padding: 0.5em 0.5em;
+	}
+	.stories__img{
+		max-width: 155px;
+    max-height: 130px;
 	}
 }
