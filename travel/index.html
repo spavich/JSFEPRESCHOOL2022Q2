@@ -8,6 +8,8 @@
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<!-- Slick Slider -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<!-- My reset style CSS -->
 	<link rel="stylesheet" href="css/reset.css">
 	<!-- CSS -->
@@ -241,8 +243,62 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="popUps">
+			<div class="popUps__overlay">
+				<div class="popUps__item">
+					<div class="popUp popUp-signIn" data-target ="signIn">
+						<div class="popUp__content">
+							<div class="popUp__title popUp-signIn__title">Log in to your account</div>
+							<a class="popUp-signIn__social facebook-signIn" href="#" target="_blank">Sign In with Facebook</a>
+							<a class="popUp-signIn__social google-signIn" href="#" target="_blank">Sign In with Google</a>
+							<div class="popUp__content-element">
+								<span>or</span>
+							</div>
+							<form class="popUp__form popUp-signIn__form" action="">
+								<span>E-mail</span>
+								<input class="popUp__form-email" required name="email" type="email">
+								<span>Password</span>
+								<input class="popUp__form-password" required name="password" type="password" minlength="7" maxlength="80">
+								<button class="button popUp__form-button" type="submit">Sign In</button>
+							</form>
+							<a class="forgot-password popUp__forgot-password" href="">Forgot Your Password?</a>
+							<hr>
+							<div class="have-account">
+								<span>Don’t have an account?</span>
+								<a class="have-account__link openPopUp" data-path="signUp" href="#">Register</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popUps__item">
+					<div class="popUp popUp-signUp" data-target ="signUp">
+						<div class="popUp__content">
+							<div class="popUp__title popUp-signUp__title">Create account</div>
+							<form class="popUp__form popUp-signUp__form" action="">
+								<span>E-mail</span>
+								<input class="popUp__form-email" required name="email" type="email">
+								<span>Password</span>
+								<input class="popUp__form-password" required name="password" type="password" minlength="7" maxlength="80">
+								<button class="button popUp__form-button popUp-signUp__button" type="submit">Sign Up</button>
+							</form>
+							<hr>
+							<div class="have-account">
+								<span>Already have an account? </span>
+								<a class="have-account__link openPopUp" href="#" data-path = "signIn">Log in</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
+	<!-- JQuery -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<!-- JS -->
 	<script src="js/script.js"></script>
 </body>
